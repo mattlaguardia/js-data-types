@@ -9,8 +9,11 @@
  * Question 1
  * Create an array of image sources. Use image1.png, image2.png, and image3.png as the array values.
  */
-
 // Your code here
+
+var q1 = ["image1.png","image2.png","image3.png"];
+console.log("Question 1 " + q1);
+
 
 /**
  * Question 2
@@ -19,12 +22,20 @@
 
 // Your code here
 
+var q2 = q1[1];
+
+console.log("Question 2 " + q2);
+
 /**
  * Question 3
  * Get the length of the first array (number of elements in the array) and store it in variable q3
  */
 
 // Your code here
+
+var q3 = q1.length;
+
+console.log("Question 3 " + q3); 
 
 /**
  * Question 4
@@ -34,6 +45,9 @@
 
 // Your code here
 
+var q4 = q1[2];
+
+console.log("Question 4 " + q4);
 
 // ____________________________________________________________________________
 
@@ -51,12 +65,21 @@ The end result should be an array of numbers with values 2,3,4,5
  */
 
 // Your code here
+var q1 = [1,2,3,4];
+
+q1.forEach(function(q1) {
+	console.log(q1 + 1);
+});
 
 
 /**
  * Question 2
  * Using the array from Question 1, find the average of the numbers in the array (average=sum of all numbers/number of numbers). Store the average in q2.
  */
+var q1 = [1,2,3,4];
 
+q1.reduceRight(function(a,b){
+	return (a+b)/4;
+})
 
 // Your code here
